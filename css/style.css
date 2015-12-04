@@ -29,6 +29,11 @@ figure {
   margin: 0;  
 }
 
+blockquote {
+  padding: 0;
+  margin: 0;
+}
+
 .container {
   width: 1180px;
   margin: 0 auto;
@@ -87,6 +92,41 @@ figure {
   display: block;
 
   background:#fff;
+}
+
+.title {
+  padding: 0 235px;
+  padding-top: 3px;
+  margin-bottom: -3px;
+
+  text-align: center;
+}
+
+.title::after {
+  content: "";
+
+  position: relative;
+  top: -14px;
+  left: 0;
+
+  height: 1px;
+  display: block;
+
+  background:#000;
+}
+
+.title h1 {
+  position: relative;
+  z-index: 1;
+
+  padding: 0 38px;
+  display: inline-block;
+
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 300;
+
+  background: #fef4f0;
 }
 
 
@@ -864,6 +904,330 @@ figure {
 
 
 
+/*404*/
+
+
+.block-404 {
+  padding-top: 27px;
+}
+
+.block-404 span {
+  margin-bottom: 27px;
+  display: block;
+
+  font-family: "Lora", "Arial", sans-serif;
+  font-size: 80px;
+  line-height: 24px;
+
+  color: #5d0806;
+}
+
+.block-404 h1 {
+  margin-bottom: 8px;
+
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 400;
+
+  color: #5d0806;
+}
+
+.block-404 p {
+  margin-bottom: 77px;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 300;
+
+  color: #909090;
+}
+
+.block-404 .btn {
+  padding-top: 13px;
+  padding-bottom: 14px;
+  margin-bottom: 64px;
+}
+
+.block-404 .btn::before {
+  top: 22px;
+  left: 15px;
+}
+
+.block-404 .btn::after {
+  top: 22px;
+  right: 15px;
+}
+
+
+
+
+
+/*Вопросы и ответы*/
+
+
+.breadcrumbs {
+  margin-bottom: 19px;
+}
+
+.breadcrumbs a {
+  display: inline-block;
+  vertical-align: top;
+
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  text-decoration: none;
+
+  color: #979797;
+}
+
+.question-block:last-of-type {
+  margin-bottom: 100px;
+}
+
+.question-row {
+  position: relative;
+
+  padding: 21px 0;
+  padding-left: 78px;
+  margin-bottom: 2px;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+
+  background:#5d0806;
+  color: #fef4f0;
+
+  cursor:pointer;
+}
+
+.question-block:nth-child(even) .question-row {
+  background:#7e0f0c;
+}
+
+.question-row-additional {
+  margin-bottom: 41px;
+}
+
+.question-row::before {
+  content: "";
+
+  position: absolute;
+  top: 31px;
+  left: 38px;
+  width: 10px;
+  height: 11px;
+
+  background:url("../img/icon-question-row-plus.png") no-repeat 0px 0px;
+}
+
+.question,
+.answer {
+  padding-left: 51px;
+  margin-bottom: 49px;
+  display: none;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.question {
+  margin-bottom: 42px;
+}
+
+.question span,
+.answer span {
+  font-weight: 600;
+}
+
+
+
+
+
+/*Статья*/
+
+
+.article-title {
+  padding: 0 87px;
+}
+
+.article-title h1 {
+  padding: 0 29px;
+}
+
+.article-image {
+  width: 1178px;
+  height: 402px;
+  padding-top: 23px;
+  margin: 0 auto;
+  margin-bottom: 101px;
+}
+
+.article-image img {
+  margin-bottom: 10px;
+}
+
+.article-image figcaption {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.article-container p {
+  margin-bottom: 37px;
+
+  font-family: "Lora", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.article-inner-title {
+  margin-bottom: 43px;
+
+  font-family: "Lora", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.article-container ul {
+  margin-bottom: 60px;
+  list-style: none;
+
+  font-family: "Lora", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.article-container li {
+  position: relative;
+
+  margin-left: 35px;
+}
+
+.article-container li::after {
+  content: "";
+
+  position: absolute;
+  top: 13px;
+  left: -34px;
+
+  width: 14px;
+  height: 14px;
+  display: block;
+
+  background: #5d0806;
+  border-radius: 50%;
+}
+
+.article-container blockquote {
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.article-container .article-decor {
+  width: 317px;
+  height: 376px;
+  padding: 14px 0px;
+  padding-left: 37px;
+  padding-right: 3px;
+  margin-right: 28px;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing:border-box;
+
+  font-family: "Exo 2", Arial, sans-serif;
+
+  border:5px solid #5d0806;
+}
+
+.article-decor span {
+  color: #5d0806;
+}
+
+.article-decor + p {
+  width: 830px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.article-container blockquote {
+  position: relative;
+
+  padding-top: 16px;
+  padding-bottom: 31px;
+  padding-right: 20px;
+  padding-left: 101px;
+  margin-bottom: 38px;
+
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.article-container blockquote::after {
+  content: "";
+
+  position: absolute;
+  top: -4px;
+  left: 0;
+
+  width: 82px;
+  height: 54px;
+  display: block;
+
+  background:url("../img/icon-article-blockquote.png") no-repeat;
+}
+
+
+
+.article-row {
+  padding: 0 30px;
+
+  border-top: 5px solid #5d0806;
+}
+
+.article-row-container {
+  padding-top: 26px;
+  margin-left: -47px;
+
+  text-align: center;
+}
+
+.article-row-item {
+  width: 335px;
+  margin-left: 47px;
+  display: inline-block;
+  vertical-align: top;
+
+  text-align: left;
+}
+
+.article-row-item img {
+  width: 335px;
+  height: 181px;
+}
+
+.article-row-item h1 {
+  margin-bottom: 7px;
+
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.article-row-item p {
+  font-family: "Lora", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+
+
+
 /*Футер*/
 
 
@@ -979,5 +1343,11 @@ figure {
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
+}
+
+
+
+.modal-content-show {
+  display: block;
 }
 
