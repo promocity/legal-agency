@@ -52,7 +52,8 @@ blockquote {
   width: 207px;
   padding-top: 9px;
   padding-bottom: 10px;
-  display: block;
+  display: inline-block;
+  vertical-align: top;
   box-sizing: border-box;
 
   font-size: 14px;
@@ -226,6 +227,8 @@ blockquote {
 }
 
 .main-navigation a {
+  padding: 7px 0;
+
   text-decoration: none;
 
   color: #000;
@@ -243,33 +246,10 @@ blockquote {
 .active {
   position: relative;
 
-  font-weight: 600;
-}
+  font-weight: 600 !important;
 
-.active::before {
-  content:"";
-
-  position: absolute;
-  top: -11px;
-  left: -2px;
-
-  width: 110%;
-  height: 3px;
-
-  background:#5d0806;
-}
-
-.active::after {
-  content:"";
-
-  position: absolute;
-  bottom: -11px;
-  left: -2px;
-
-  width: 110%;
-  height: 3px;
-
-  background:#5d0806;
+  border-top:3px solid #5d0806;
+  border-bottom:3px solid #5d0806;
 }
 
 
@@ -324,6 +304,7 @@ blockquote {
 
 .service-row-item {
   width: 225px;
+  margin-bottom: 30px;
   margin-left: 93px;
 
   display: inline-block;
@@ -752,6 +733,7 @@ blockquote {
 }
 
 .additional-block-row span {
+  width: 100px;
   margin-right: 43px;
   display: inline-block;
   vertical-align: top;
@@ -759,11 +741,14 @@ blockquote {
   font-size: 18px;
   line-height: 24px;
   font-weight: 300;
+  word-break: break-word;
+
 
   color: #bebebe;
 }
 
 .additional-block-row .additional-block-section {
+  width: 210px;
   display: inline-block;
   vertical-align: top;
 
@@ -872,7 +857,7 @@ blockquote {
   padding: 16px 0;
   margin-top: 9px;
   margin-bottom: 20px;
-  margin-left: 289px;
+  margin-right: 154px;
 
   font-size: 16px;
   line-height: 24px;
@@ -892,6 +877,7 @@ blockquote {
 
 .main-form span {
   margin-right: 56px;
+  display: block;
 
   font-family: "Lora", "Arial", sans-serif;
   font-size: 18px;
@@ -1142,6 +1128,8 @@ blockquote {
   font-family: "Exo 2", Arial, sans-serif;
 
   border:5px solid #5d0806;
+
+  overflow: hidden;
 }
 
 .article-decor span {
@@ -1223,6 +1211,578 @@ blockquote {
   font-size: 18px;
   line-height: 24px;
 }
+
+
+
+
+
+/*Контакты*/
+
+
+.contacts-container {
+  padding-top: 13px;
+  margin-bottom: 118px;
+}
+
+.contacts-col-left {
+  width: 640px;
+  float: left;
+}
+
+.contacts-text {
+  margin-bottom: 10px;
+  display: block;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.contacts-email {
+  width: 280px;
+  margin-bottom: 111px;
+  margin-right: 115px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.contacts-email-adress {
+  font-family: "Lora", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 400;
+
+  color: #5d0806;
+}
+
+.contacts-social {
+  width: 210px;
+  display: inline-block;
+  vertical-align: top;
+
+  text-align: left;
+}
+
+.contacts-social .contacts-text {
+  margin-bottom: 25px;
+}
+
+.contacts-social-container a {
+  margin-right: 36px;
+}
+
+.contacts-social-container .social-btn-fb {
+  margin-right: 0;
+}
+
+.contacts-tel {
+  width: 340px;
+  margin-bottom: 116px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.contacts-tel .contacts-text {
+  margin-bottom: 27px;
+}
+
+.contacts-tel-number {
+  font-family: "Lora", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 30px;
+  
+  color: #5d0806;
+}
+
+.contacts-banner {
+  position: relative;
+  z-index:2;
+
+  width: 566px;
+  height: 173px;
+  padding:36px 0;
+  padding-left: 42px;
+  box-sizing: border-box;
+
+  background:#5d0806;
+  color: #fff;
+
+  transform: translateX(135px);
+}
+
+.contacts-banner .contacts-text {
+  margin-bottom: 28px;  
+}
+
+.contacts-banner-adress {
+  font-family: "Lora", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 30px;
+}
+
+.contacts-col-right {
+  width: 507px;
+  float: right;
+}
+
+.map {
+  width: 506px;
+  height: 649px;
+}
+
+
+
+
+
+/*О компании*/
+
+
+.about-us-block {
+  padding-top: 21px;
+  margin-bottom: 65px;
+}
+
+.about-us-block > p {
+  padding-bottom: 41px;
+  margin-bottom: 43px;
+
+  position: relative;
+
+  font-family: "Lora", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.about-us-block > p::after {
+  content:"";
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 805px;
+  height: 1px;
+  display: block;
+
+  background:#000;
+}
+
+.about-us-container {
+  margin-bottom: 70px;
+}
+
+.about-us-container img {
+  width: 838px;
+  height: 402px;
+  float: left;
+}
+
+.about-us-column {
+  width: 310px;
+  float: right;
+
+  text-align: left;
+}
+
+.about-us-column h1 {
+  margin-bottom: 17px;
+
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+
+  color: #5d0806;
+}
+
+.about-us-column p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+
+
+
+
+/*Отзывы*/
+
+
+.reviews-container {
+  padding-top: 10px;
+}
+
+.review-card {
+  margin-bottom: 63px;
+}
+
+.review-col-left {
+  position: relative;
+
+  width: 110px;
+  margin-right: 111px;
+  float: left;
+
+  text-align: center;
+}
+
+.review-col-left::before {
+  content:"";
+
+  position: absolute;
+  top: 75px;
+  left: 134px;
+
+  width: 65px;
+  height: 2px;
+  display: block;
+
+  background:#5d0806;
+}
+
+.review-col-left::after {
+  content:"";
+
+  position: absolute;
+  top: 10px;
+  left: -21px;
+
+  width: 152px;
+  height: 125px;
+  display: block;
+
+  background:url("../img/decor-review.png") no-repeat;
+}
+
+.review-col-left span {
+  margin-bottom: 8px;
+  display: block;
+
+  font-size: 14px;
+  line-height: 36px;
+}
+
+.review-col-left img {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  display: block;
+}
+
+.review-col-left div {
+  margin-left: 20px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.review-col-right {
+  position: relative;
+
+  width: 860px;
+  float: left;
+
+  overflow: hidden;
+}
+
+.review-col-right p {
+  height: 130px;
+  padding-top: 3px;
+  margin-bottom: 24px;
+
+  font-family: "Lora", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 36px;
+
+  overflow: hidden;
+}
+
+.review-col-right a {
+  display: inline-block;
+  vertical-align: top;
+
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #5d0806;
+}
+
+
+
+
+
+/*Прайс*/
+
+
+.price-table {
+  width: 940px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 73px;
+
+  border:3px solid #5d0806;
+}
+
+.price-table span {
+  display: block;
+
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.price-table th {
+  width: 50%;
+  padding: 8px 38px;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  text-align: left;
+
+  color: #5d0806;
+  border:3px solid #5d0806;
+}
+
+.price-table td {
+  width: 50%;
+  padding: 7px 0;
+  padding-left: 38px;
+
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+
+  border:1px solid #5d0806;
+}
+
+
+
+
+
+/*Внутреняя навигация*/
+
+
+.inner-navigation {
+  margin-top: 24px;
+  margin-bottom: 69px;
+}
+
+.inner-navigation ul {
+  list-style:none;
+
+  font-size: 0;
+  text-align: center;
+}
+
+.inner-navigation li {
+  margin: 0 15px;
+  display: inline-block;
+  vertical-align: top;
+
+  font-size: 20px;
+}
+
+.inner-navigation a {
+  padding: 7px 0;
+
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300;
+
+  text-decoration: none;
+
+  color: #000;
+}
+
+
+
+
+
+/*Услуга*/
+
+
+.servise-descr {
+  margin-bottom: 45px;
+}
+
+.servise-descr img {
+  width: 323px;
+  height: 243px;
+  margin-right: 35px;
+  float: left;
+}
+
+.servise-descr p {
+  margin-bottom: 20px;
+
+  font-family: "Lora", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.service-container {
+  margin-bottom: 40px;
+}
+
+.service-container span {
+  position: relative;
+
+  margin-right: 45px;
+  display: inline-block;
+  vertical-align: top;
+
+  font-size: 48px;
+  line-height: 48px;
+
+  color: #5d0806;
+}
+
+.service-container i {
+  font-style: normal;
+}
+
+.service-container i::after {
+  content: "";
+
+  position: absolute;
+  top: 32px;
+  right: 6px;
+
+  width: 17px;
+  height: 2px;
+  display: block;
+
+  background: #5d0806;
+}
+
+.price-btn {
+  width: 242px;
+  padding: 13px 0;
+  margin-right: 35px;
+
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+
+  border-radius:20px;
+}
+
+.price-btn::before {
+  width: 17px;
+  top: 25px;
+  left: 19px;
+}
+
+.price-btn::after {
+  width: 17px;
+  top: 25px;
+  right: 23px;
+}
+
+.price-btn:last-child {
+  padding:11px 0;
+
+  background:#fef4f0;
+  color: #5d0806;
+  border:3px solid #5d0806;
+}
+
+.price-btn:last-child::before{
+  top: 21px;
+  left: 15px;
+
+  background:#5d0806;
+}
+
+.price-btn:last-child::after{
+  top: 21px;
+  right: 21px;
+
+  background:#5d0806;
+}
+
+
+
+
+
+
+/*Навигация - услуги*/
+
+
+.service-navigation {
+  padding-top: 143px;
+  margin-bottom: -43px;
+
+  text-align: center;
+  font-size: 0;
+}
+
+.service-navigation-item {
+  position: relative;
+
+  width: 150px;
+  margin: 0 20px;
+  margin-bottom: 137px;
+  display: inline-block;
+  vertical-align: top;
+
+  font-size: 19px;
+  line-height: 25px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+
+  color: #5d0806;
+}
+
+.service-navigation-item::before {
+  content:"";
+
+  position: absolute;
+  top: -82px;
+  left: 40px;
+
+  width: 70px;
+  height: 70px;
+  display: block;
+
+  background:url("../img/icon-service-navigation.png");
+}
+
+.service-navigation-item::before {
+  background:url("../img/icon-service-navigation.png");
+}
+
+.service-navigation-item::before {
+  background:url("../img/icon-service-navigation.png");
+}
+
+.service-navigation-item::before {
+  background:url("../img/icon-service-navigation.png");
+}
+
+.service-navigation-item::before {
+  background:url("../img/icon-service-navigation.png");
+}
+
+.service-navigation-item::before {
+  background:url("../img/icon-service-navigation.png");
+}
+
+.service-navigation-item::before {
+  background:url("../img/icon-service-navigation.png");
+}
+
+.service-navigation-item::before {
+  background:url("../img/icon-service-navigation.png");
+}
+
+.service-navigation-item::before {
+  background:url("../img/icon-service-navigation.png");
+}
+
 
 
 
@@ -1351,3 +1911,6 @@ blockquote {
   display: block;
 }
 
+.review-text-show {
+  height:auto !important;
+}
